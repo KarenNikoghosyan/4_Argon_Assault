@@ -3,6 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -11,8 +15,7 @@ public class StartGame : MonoBehaviour
 
     private void LoadFirstScene()
     {
-        SceneManager.LoadScene(1);
-      
+        SceneManager.LoadScene(1);    
     }
     
 }
