@@ -7,8 +7,17 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour
 {
     [Tooltip("In ms^-1")][SerializeField] float Speed = 20f;
-    [Tooltip("In m")] [SerializeField] float XRange = 10f;
-    [Tooltip("In m")][SerializeField] float YRange = 6.5f;
+    [Tooltip("In m")] [SerializeField] float XRange = 15f;
+    [Tooltip("In m")][SerializeField] float YRange = 10f;
+    [SerializeField] float positionPitchFactor = -2.5f;
+    [SerializeField] float controlPitchFactor = -30f;
+
+    [SerializeField] float positionYawFactor = 2.5f;
+
+    [SerializeField] float controlRollFactor = -20f;
+
+
+    float xThrow, yThrow;
 
     // Start is called before the first frame update
     void Start()
@@ -25,17 +34,25 @@ public class Player : MonoBehaviour
 
     private void ProcessRotation()
     {
-        transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControl = yThrow * controlPitchFactor;
+        float pitch = pitchDueToPosition + pitchDueToControl;
+
+        float yaw = transform.localPosition.x * positionYawFactor;
+
+        float roll = xThrow * controlRollFactor;
+
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
     private void ProcessTranslation()
     {
-        float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+        xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         float xOffest = xThrow * Speed * Time.deltaTime;
         float rawXPos = transform.localPosition.x + xOffest;
         float clampedXPos = Mathf.Clamp(rawXPos, -XRange, XRange);
 
-        float yThrow = CrossPlatformInputManager.GetAxis("Vertical");
+        yThrow = CrossPlatformInputManager.GetAxis("Vertical");
         float yOffest = yThrow * Speed * Time.deltaTime;
         float rawYPos = transform.localPosition.y + yOffest;
         float clampedYPos = Mathf.Clamp(rawYPos, -YRange, YRange);

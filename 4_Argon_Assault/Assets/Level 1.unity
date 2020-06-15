@@ -479,7 +479,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -692,8 +692,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 20
-  XRange: 10
-  YRange: 6.5
+  XRange: 15
+  YRange: 10
+  positionPitchFactor: -2.5
+  controlPitchFactor: -30
+  positionYawFactor: 2.5
+  controlRollFactor: -20
 --- !u!1 &1827766095
 GameObject:
   m_ObjectHideFlags: 0
