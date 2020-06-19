@@ -40,7 +40,7 @@ BoxCollider:
   m_GameObject: {fileID: 8660546224155307600}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.5, z: 2.2}
   m_Center: {x: 0, y: 0, z: 0}
@@ -84,7 +84,7 @@ BoxCollider:
   m_GameObject: {fileID: 8660640706863775006}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 0.6, z: 9}
   m_Center: {x: 0, y: 0, z: 0}
@@ -128,7 +128,7 @@ BoxCollider:
   m_GameObject: {fileID: 8660897470964065336}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.3, y: 0.5, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
@@ -172,7 +172,7 @@ BoxCollider:
   m_GameObject: {fileID: 8660992409968343438}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 8.2, y: 0.2, z: 1.9}
   m_Center: {x: 0, y: 0, z: 0}
@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 6033804158162247505}
   - component: {fileID: 1227606072}
   - component: {fileID: 1227606074}
+  - component: {fileID: 6462477190100123305}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -309,6 +310,18 @@ MonoBehaviour:
   controlPitchFactor: -30
   positionYawFactor: 2
   controlRollFactor: -30
+--- !u!114 &6462477190100123305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8660997380182304732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb2075a5ea298f54684e4a966b1ef373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8661008871282342324
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +398,7 @@ BoxCollider:
   m_GameObject: {fileID: 8661229582744506624}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.3, y: 0.5, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
@@ -429,7 +442,7 @@ BoxCollider:
   m_GameObject: {fileID: 8662649414203153322}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.5, z: 2.2}
   m_Center: {x: 0, y: 0, z: 0}

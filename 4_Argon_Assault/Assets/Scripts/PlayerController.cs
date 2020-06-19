@@ -4,38 +4,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    [Tooltip("In ms^-1")][SerializeField] float Speed = 20f;
+    [Header("General")]
+    [Tooltip("In ms^-1")][SerializeField] float ControlSpeed = 20f;
     [Tooltip("In m")] [SerializeField] float XRange = 20f;
     [Tooltip("In m")][SerializeField] float YRange = 12f;
+    [Header("Screen-Position Based")]
     [SerializeField] float positionPitchFactor = -2.5f;
-    [SerializeField] float controlPitchFactor = -30f;
-
     [SerializeField] float positionYawFactor = 2.5f;
+    [Header("Control-Throw Based")]
+    [SerializeField] float controlPitchFactor = -30f;
 
     [SerializeField] float controlRollFactor = -30f;
 
 
     float xThrow, yThrow;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        print("Player hit triggered something");
-    }
+    bool isControlEnabled = true;
 
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
-
+    private void OnPlayerDeath()
+    {
+        isControlEnabled = false;
+    }
     private void ProcessRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
@@ -52,12 +51,12 @@ public class Player : MonoBehaviour
     private void ProcessTranslation()
     {
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
-        float xOffest = xThrow * Speed * Time.deltaTime;
+        float xOffest = xThrow * ControlSpeed * Time.deltaTime;
         float rawXPos = transform.localPosition.x + xOffest;
         float clampedXPos = Mathf.Clamp(rawXPos, -XRange, XRange);
 
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
-        float yOffest = yThrow * Speed * Time.deltaTime;
+        float yOffest = yThrow * ControlSpeed * Time.deltaTime;
         float rawYPos = transform.localPosition.y + yOffest;
         float clampedYPos = Mathf.Clamp(rawYPos, -YRange, YRange);
 

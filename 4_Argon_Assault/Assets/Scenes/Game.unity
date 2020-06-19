@@ -1455,18 +1455,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
-    - target: {fileID: 1227606072, guid: 9dbf354f18a1b5849a1c2bf075f2063d, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1227606072, guid: 9dbf354f18a1b5849a1c2bf075f2063d, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1227606073, guid: 9dbf354f18a1b5849a1c2bf075f2063d, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 752260882981317553, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
         type: 3}
       propertyPath: moveWithCustomTransform
@@ -1536,41 +1524,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player Ship
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706165312545318940, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8706549089777828492, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8708913721883549812, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8708913721883549812, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8709132449031196750, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8709446286653206932, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8709470980720387826, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dbf354f18a1b5849a1c2bf075f2063d, type: 3}
