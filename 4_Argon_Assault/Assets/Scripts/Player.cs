@@ -24,6 +24,10 @@ public class Player : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        print("Player hit triggered something");
+    }
 
     // Update is called once per frame
     void Update()
