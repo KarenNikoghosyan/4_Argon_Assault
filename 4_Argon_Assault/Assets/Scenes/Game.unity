@@ -164,11 +164,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 873064752}
     m_Modifications:
-    - target: {fileID: -5647696683973317201, guid: a19af03b7c64771489f010af565cc649,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649, type: 3}
       propertyPath: m_Name
       value: Ship_04
@@ -327,11 +322,6 @@ PrefabInstance:
     - target: {fileID: 4301618257826614, guid: 5f0acb7fcf73f9b43beff0e0f19c45da, type: 3}
       propertyPath: m_LocalScale.z
       value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3344477318991335403, guid: 5f0acb7fcf73f9b43beff0e0f19c45da,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f0acb7fcf73f9b43beff0e0f19c45da, type: 3}
@@ -504,11 +494,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: 7059143448116058586, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 3}
 --- !u!1 &565611105 stripped
@@ -630,11 +615,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 873064752}
     m_Modifications:
-    - target: {fileID: -5647696683973317201, guid: a19af03b7c64771489f010af565cc649,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649, type: 3}
       propertyPath: m_Name
       value: Ship_04
@@ -763,11 +743,6 @@ PrefabInstance:
     - target: {fileID: 4301618257826614, guid: 5f0acb7fcf73f9b43beff0e0f19c45da, type: 3}
       propertyPath: m_LocalScale.z
       value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3344477318991335403, guid: 5f0acb7fcf73f9b43beff0e0f19c45da,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f0acb7fcf73f9b43beff0e0f19c45da, type: 3}
@@ -1226,11 +1201,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 873064752}
     m_Modifications:
-    - target: {fileID: -5647696683973317201, guid: a19af03b7c64771489f010af565cc649,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649, type: 3}
       propertyPath: m_Name
       value: Ship_04
@@ -1306,11 +1276,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 873064752}
     m_Modifications:
-    - target: {fileID: -7212937178792839184, guid: bb7599871142bcd41bace4e2b151829a,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1875551938172112, guid: bb7599871142bcd41bace4e2b151829a, type: 3}
       propertyPath: m_Name
       value: Ship_06
@@ -6376,11 +6341,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 873064752}
     m_Modifications:
-    - target: {fileID: -7212937178792839184, guid: bb7599871142bcd41bace4e2b151829a,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1875551938172112, guid: bb7599871142bcd41bace4e2b151829a, type: 3}
       propertyPath: m_Name
       value: Ship_06
@@ -6596,11 +6556,6 @@ PrefabInstance:
     - target: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 3}
       propertyPath: m_LocalScale.z
       value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7059143448116058586, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 3}
@@ -6977,11 +6932,6 @@ PrefabInstance:
     - target: {fileID: 4301618257826614, guid: 5f0acb7fcf73f9b43beff0e0f19c45da, type: 3}
       propertyPath: m_LocalScale.z
       value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3344477318991335403, guid: 5f0acb7fcf73f9b43beff0e0f19c45da,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f0acb7fcf73f9b43beff0e0f19c45da, type: 3}

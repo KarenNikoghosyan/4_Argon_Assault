@@ -15,11 +15,16 @@ public class CollisionHandler : MonoBehaviour
     {
         gameObject.SendMessage("OnPlayerDeath");
         deathFX.SetActive(true);
+        Invoke("MovePlayerOnDeath", 0.5f);
         Invoke("ReloadLevel", levelLoadDelay);
     }
     private void ReloadLevel()
     {
         deathFX.SetActive(false);
         SceneManager.LoadScene(1);
+    }
+    private void MovePlayerOnDeath()
+    {
+        transform.position = new Vector3(0f, -100f, 0f);
     }
 }
