@@ -226,6 +226,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a19af03b7c64771489f010af565cc649, type: 3}
+--- !u!1 &46288217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6342158625020670634, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
+    type: 3}
+  m_PrefabInstance: {fileID: 752260884102412508}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &95718656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -723,6 +729,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1821478584253093593, guid: 3e8dd6ace21c559439eecafc018cfd7d,
     type: 3}
   m_PrefabInstance: {fileID: 1821478583655711656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &656534999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 752260882981317558, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
+    type: 3}
+  m_PrefabInstance: {fileID: 752260884102412508}
   m_PrefabAsset: {fileID: 0}
 --- !u!108 &705507994 stripped
 Light:
@@ -2251,6 +2263,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 1227606074, guid: 9dbf354f18a1b5849a1c2bf075f2063d, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227606074, guid: 9dbf354f18a1b5849a1c2bf075f2063d, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 656534999}
+    - target: {fileID: 1227606074, guid: 9dbf354f18a1b5849a1c2bf075f2063d, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 46288217}
     - target: {fileID: 315780179237941405, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
         type: 3}
       propertyPath: m_RootOrder
@@ -2279,7 +2303,7 @@ PrefabInstance:
     - target: {fileID: 752260882981317558, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
         type: 3}
       propertyPath: m_Name
-      value: Bullets Left
+      value: Gun Left
       objectReference: {fileID: 0}
     - target: {fileID: 5855673135964748551, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
         type: 3}
@@ -2289,7 +2313,7 @@ PrefabInstance:
     - target: {fileID: 6342158625020670634, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
         type: 3}
       propertyPath: m_Name
-      value: Bullets Right
+      value: Gun Right
       objectReference: {fileID: 0}
     - target: {fileID: 6342158625020670637, guid: 9dbf354f18a1b5849a1c2bf075f2063d,
         type: 3}
