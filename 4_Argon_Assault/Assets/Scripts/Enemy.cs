@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathFX;
     [SerializeField] Transform parent;
-    [SerializeField] int scorePerHit = 100;
+    [SerializeField] int score = 100;
     [SerializeField] int hits = 20;
 
     ScoreBoard scoreBoard;
@@ -25,16 +25,16 @@ public class Enemy : MonoBehaviour
     }
     private void OnParticleCollision(GameObject other)
     {
-        ProcessHit();
+        ProccessHit();
         if (hits <= 0)
         {
             EnemyKill();
         }
     }
 
-    private void ProcessHit()
+    private void ProccessHit()
     {
-        scoreBoard.ScoreHit(scorePerHit);
+        scoreBoard.ScoreHit(score);
         hits--;
     }
 

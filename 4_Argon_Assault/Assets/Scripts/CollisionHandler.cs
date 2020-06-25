@@ -9,6 +9,7 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] GameObject deathFX;
     private void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.tag != "Enemy") { return; }
         StartDeathSequence();
     }
     private void StartDeathSequence()

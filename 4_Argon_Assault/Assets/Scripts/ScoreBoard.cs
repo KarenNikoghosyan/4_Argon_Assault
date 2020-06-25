@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class ScoreBoard : MonoBehaviour
 {
-    int score;
+    int totalScore;
     Text scoreText;
     // Start is called before the first frame update
     void Start()
     {
         scoreText = GetComponent<Text>();
-        scoreText.text = score.ToString();
+        scoreText.text = totalScore.ToString();
     }
-    public void ScoreHit(int scorePerHit)
+    public void ScoreHit(int score)
     {
-        score = score + scorePerHit;
-        scoreText.text = score.ToString();
+        totalScore = totalScore + score;
+        scoreText.text = totalScore.ToString();
     }
 }
